@@ -1,3 +1,19 @@
+/* GLOBAL CALLS */
+
 body {
-    background-color: cyan;
+    background-color: white;
+}
+
+
+/* NAV BAR */
+
+.nav-title {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #f7f7f7;
 }
