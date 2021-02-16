@@ -38,6 +38,20 @@ nav {
     grid-column: 2 / span 4;
 }
 
+.clock-styling {
+    background-color: #000000;
+    color: #66ff33;
+    width: 73px;
+    letter-spacing: 2px;
+}
+
+.mouseover-div {
+    height: 75px;
+    width: 75px;
+    margin: 50px;
+    background-color: aqua;
+}
+
 
 /* SIDEBAR */
 
@@ -47,9 +61,18 @@ nav {
     padding: 2%, 0%, 0%, 0%;
 }
 
+.sidebar-header {
+    padding-bottom: 0.7rem;
+}
+
 .sidebar div a {
     text-decoration: none;
     padding: 2%;
+}
+
+.sidebar div a:hover {
+    font-size: 105%;
+    transition-duration: 0.2ms;
 }
 
 
