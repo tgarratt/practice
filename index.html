@@ -40,7 +40,9 @@
             <!-- MOUSEOVER EFFECT  -->
             <div id="mouseover" class="grid-item">
                 <div>Section three: A mouseover effect</div>
-                <div onmouseover="mouseOn(this)" onmouseout="mouseOff(this)" class="mouseover-div"></div>
+                <div id="onMouseDiv" onmouseover="mouseOn(this)" class="mouseover-div"></div>
+                <button type="button" onclick="getHex()" class="get-col-but">Get colour</button>
+                <div id="col-print"></div>
             </div>
 
             <!-- CURSER TRAIL  -->
@@ -51,6 +53,29 @@
             <!-- PICTURE SLIDE  -->
             <div id="picture-slides" class="grid-item">
                 <div>Section five: Auto changing picture slides</div>
+                <div class="slideshow-container">
+
+                    <div class="slideshow-slide">
+                        <div class="slide-count slide-fade">1/4</div>
+                        <img src="img/slideshow-1.jpg">
+                    </div>
+
+                    <div class="slideshow-slide slide-fade">
+                        <div class="slide-count">2/4</div>
+                        <img src="img/slideshow-2.jpg">
+                    </div>
+
+                    <div class="slideshow-slide slide-fade">
+                        <div class="slide-count">3/4</div>
+                        <img src="img/slideshow-3.jpg">
+                    </div>
+
+                    <div class="slideshow-slide slide-fade">
+                        <div class="slide-count">4/4</div>
+                        <img src="img/slideshow-4.jpg">
+                    </div>
+
+                </div>
             </div>
 
 
@@ -61,6 +86,15 @@
             <div class="footer-txt footer-link"><a href="#page-top">To top</a></div>
         </footer>
 
-        
+        <script>
+            function getHex() {
+                document.getElementById("col-print").innerHTML = onMouseDiv.style.backgroundColor;
+            }
+
+            var slideIndex = 1;
+                showSlides(slideIndex);
+
+        </script>
+
     </body>
 </html>
