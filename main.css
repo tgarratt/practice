@@ -39,12 +39,14 @@ nav {
     grid-column: 2 / span 4;
 }
 
+
 .clock-styling {
     background-color: #000000;
     color: #66ff33;
     width: 73px;
     letter-spacing: 2px;
 }
+
 
 .mouseover-div {
     height: 75px;
@@ -57,6 +59,7 @@ nav {
 .get-col-but {
     margin-left: 0.5rem;
 }
+
 
 .slideshow-container {
     max-width: auto;
@@ -78,14 +81,6 @@ nav {
     background-repeat: no-repeat;
 }
 
-.slide-count {
-    /* color: #f2f2f2; */
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 .slide-fade {
     -webkit-animation-name: slide-fade;
     -webkit-animation-duration: 1.7s;
@@ -101,6 +96,83 @@ nav {
 @keyframes slide-fade {
     from {opacity: .3}
     to {opacity: 1}
+}
+
+ */
+
+ 
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  max-height: 300px;
+  font-size: 60%;
+}
+
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.calc-button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+.calc-button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #337cac;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.all-clear:hover {
+  background-color: #f17377;
+}
+
+.equal-sign {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+  height: 100%;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 
